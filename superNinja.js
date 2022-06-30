@@ -6,6 +6,7 @@ class Ninja {
     this.strength = 3
 }
 
+
     sayName() {
         console.log(`My name is ${this.username}`)
     }
