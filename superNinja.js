@@ -21,8 +21,24 @@ class Ninja {
     }
 }
 
+class Sensei extends Ninja {
+    constructor(name, health = 200, speed= 10, strength=10, wisdom = 10) {
+        super(name, health, speed, strength);
+        this.wisdom = wisdom
+    }
+
+    speakWisdom() {
+        this.drinkSake()
+        console.log(`I drank sake, so my health is now ${this.health} and my wisdom is greater.`)
+    }
+}
+
 const anthony = new Ninja('anthony', 100)
 
 anthony.drinkSake()
 anthony.showStats()
 anthony.sayName()
+
+arkeem = new Sensei("arkeem")
+
+arkeem.speakWisdom()
